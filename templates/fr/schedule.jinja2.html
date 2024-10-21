@@ -69,9 +69,10 @@
     <section id="calendar">
       <h3>Calendrier</h3>
       <p>
-        Le calendrier est disponible ci-dessous, sur une
-        <a href="{{ url_for('schedule', lang=lang) }}">page en plein écran</a>,
-        ou <a href="{{ url_for('calendar', lang=lang) }}">dans votre application de calendrier favorite</a>.
+        Le calendrier est disponible ci-dessous,
+        sur une <a href="{{ url_for('schedule', lang=lang) }}">page en plein écran</a>,
+        en <a href="{{ url_for('pdf_schedule', lang=lang) }}">format PDF</a>,
+        ou dans votre <a href="{{ url_for('calendar', lang=lang) }}">application de calendrier favorite</a>.
       </p>
       <p>
         Vous pouvez également lire la description des

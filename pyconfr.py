@@ -3,8 +3,9 @@ from pathlib import Path
 
 from babel.dates import format_date, format_time, format_timedelta
 from datetime import date, time, timedelta
-from flask import Flask, Response, render_template
+from flask import Flask, Response, render_template, url_for
 from flask_frozen import Freezer
+from flask_weasyprint import render_pdf
 from markdown2 import Markdown
 from sassutils.wsgi import SassMiddleware
 from slugify import slugify
@@ -96,6 +97,11 @@ def schedule(lang):
     return render_template(
         'schedule.jinja2.html', page_name='full-schedule', lang=lang,
         schedule=SCHEDULE)
+
+
+@app.route('/2024/<lang>/full-schedule.pdf')
+def pdf_schedule(lang):
+    return render_pdf(url_for('schedule', lang=lang))
 
 
 @app.route('/2024/<lang>/calendar.ics')

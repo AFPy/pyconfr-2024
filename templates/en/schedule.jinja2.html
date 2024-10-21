@@ -70,9 +70,10 @@
     <section id="calendar">
       <h3>Calendar</h3>
       <p>
-        The calendar is available below, in a
-        <a href="{{ url_for('schedule', lang=lang) }}">fullscreen page</a>, or
-        <a href="{{ url_for('calendar', lang=lang) }}">in your favourite calendar application</a>.
+        The calendar is available below,
+        in a <a href="{{ url_for('schedule', lang=lang) }}">fullscreen page</a>,
+        in <a href="{{ url_for('pdf_schedule', lang=lang) }}">PDF format</a>,
+        or in your <a href="{{ url_for('calendar', lang=lang) }}">favourite calendar application</a>.
       </p>
       <p>
         You can read the description of

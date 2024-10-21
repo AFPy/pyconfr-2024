@@ -1,6 +1,6 @@
 .venv:
 	python3 -m venv .venv
-	.venv/bin/pip install setuptools frozen-flask flask libsass markdown2 python-slugify babel
+	.venv/bin/pip install setuptools frozen-flask flask flask-weasyprint libsass markdown2 python-slugify babel
 
 install: .venv
 
