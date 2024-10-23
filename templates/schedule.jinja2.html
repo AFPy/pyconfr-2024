@@ -39,7 +39,7 @@
                   {% for i in range(rowspan - 1) %}
                     {{ rowspans.append(room.id) or '' }}
                   {% endfor %}
-                  <td rowspan="{{ rowspan }}" class="{{ talk.submission_type.en | slug }}">
+                  <td rowspan="{{ rowspan }}" class="{{ talk.submission_type.en | slug }}" {% if talk.content_locale %}lang="{{ talk.content_locale }}"{% endif %}>
                     <a href="{{ url_for('talks', category=talk.submission_type.en | slug, lang=lang, _anchor='talk-' + talk.code) }}" target="_parent">
                       {{ talk.title }}
                     </a>
