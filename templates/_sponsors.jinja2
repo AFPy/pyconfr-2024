@@ -227,6 +227,11 @@ En complément, nous proposons notre expertise pour la mise en place de deux sol
           promouvoir, soutenir et faire progresser son projet
           open-source : dans notre cas, le framework web Django
         </p>
+      {% elif company == "Julien Lenormand" %}
+      <p>
+       (version courte) Je vous souhaite une bonne PyCon FR 2024 !<br/>
+(version longue) En tant que sponsor Bronze, on a le droit à 1000 caractères pour transmettre un message. Je n'ai rien à vous vendre, juste de bonnes ondes à vous envoyer. Je suis content de contribuer à ce que cette conférence se tienne et à ce qu'elle soit accessible à tous et toutes. Pour les personnes qui n'auront pas eu la chance d'y assister, il y aura normalement les replays sur PyVideo.org ensuite. J'espère que les deux jours de sprints pour des projets Open Source, ainsi que toutes les conférences, les rencontres et les échanges auront un impact positif sur vous, directement ou indirectement. Python est bien connu pour sa communauté, n'hésitez pas à en faire partie, il n'y a que du bon à en tirer. Ainsi, je vous souhaite de passer une superbe PyCon FR 2024, que vous la viviez en direct à Strasbourg, ou bien plus tard en vidéo, en blog, en podcast, ... Passez une bonne journée :)
+       </p>
       {% endif %}
     {% elif lang == 'en' %}
       {% if company == 'Université de Strasbourg' %}
@@ -398,6 +403,11 @@ En complément, nous proposons notre expertise pour la mise en place de deux sol
           Foundation is to promote, support, and advance its
           open-source project: in our case, the Django Web framework.
         </p>
+      {% elif company == "Julien Lenormand" %}
+      <p>
+      (short version) I wish you a great PyCon FR 2024!<br/>
+(long version) As a Bronze sponsor, we have the right to send a message of up to 1000 characters. I'm not selling anything; just sending good vibes your way. I'm happy to contribute to making this conference happen and accessible to everyone. For those who won't be able to attend, there will normally be replays on PyVideo.org later. I hope the two days of Open Source project sprints, as well as all the conferences, meetings, and exchanges will have a positive impact on you, directly or indirectly. Python is well-known for its community; don't hesitate to join in – it's only good things can come from it. So, I wish you a great PyCon FR 2024, whether you're attending live in Strasbourg or later through video, blog, podcast, etc. Have a great day! :)
+      </p>
       {% endif %}
     {% endif %}
   </div>
@@ -430,6 +440,7 @@ En complément, nous proposons notre expertise pour la mise en place de deux sol
           'pass Culture': 'https://pass.culture.fr/',
           'API Society': 'https://www.api-society.com/fr',
           'DSF': 'https://www.djangoproject.com/',
+          'Julien Lenormand': 'https://www.lenormand-julien.fr/',
       },
 
       'Cœur' if lang == 'fr' else 'Heart': {
@@ -443,7 +454,7 @@ En complément, nous proposons notre expertise pour la mise en place de deux sol
       },
   } %}
 
-  {% set png_logos = ('Université de Strasbourg', 'Alsace Digitale', 'AIUS', 'API Society', 'PauLLA', 'Kraken', 'PSF') %}
+  {% set png_logos = ('Université de Strasbourg', 'Alsace Digitale', 'AIUS', 'API Society', 'PauLLA', 'Kraken', 'PSF', 'Julien Lenormand') %}
 
 
   {% if lang == 'fr' %}
